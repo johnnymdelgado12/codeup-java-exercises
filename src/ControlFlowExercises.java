@@ -50,11 +50,24 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
-        for (long i = 2; i <= 1000000; i *=i){
+//        for (long i = 2; i <= 1000000; i *=i){
+//
+//            System.out.println(i);
+//        }
 
-            System.out.println(i);
+//        2. Fizzbuzz
+
+        for(int i = 0; i <= 100; i++ ){
+            if (i % 15 == 0){
+                System.out.println("Fizz Buzz");
+            } else if (i % 5 == 0){
+                System.out.println("Buzz");
+            } else if (i % 3 == 0){
+                System.out.println("Fizz");
+            } else {
+                System.out.println(i);
+            }
         }
-
 
     }
     }
