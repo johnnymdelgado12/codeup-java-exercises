@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -7,7 +9,7 @@ public class ControlFlowExercises {
 //        int i = 5;
 //        while (i <= 14){
 //            i++;
-//            System.out.println(i);
+//            System.out.println(i + " ");
 //        }
 
 
@@ -57,7 +59,7 @@ public class ControlFlowExercises {
 
 //        2. Fizzbuzz
 
-//        for(int i = 0; i <= 100; i++ ){
+//        for(int i = 1; i <= 100; i++ ){
 //            if (i % 15 == 0){
 //                System.out.println("Fizz Buzz");
 //            } else if (i % 5 == 0){
@@ -67,6 +69,31 @@ public class ControlFlowExercises {
 //            } else {
 //                System.out.println(i);
 //            }
+//        }
+
+//        Display a table of powers.
+//
+//        Prompt the user to enter an integer.
+//        Display a table of squares and cubes from 1 to the value entered.
+//        Ask if the user wants to continue.
+//        Assume that the user will enter valid data.
+//        Only continue if the user agrees to.
+
+
+//        Scanner input = new Scanner(System.in);
+//
+//        String userConfirm = "Y";
+//
+//        while (userConfirm.equalsIgnoreCase("y")){
+//            System.out.println("What number would you like to go up to?");
+//            int num = Integer.parseInt(input.nextLine());
+//
+//            System.out.println("Here is your table");
+//            System.out.println("Number | Squared | Cubed");
+//            System.out.println("------ | ------- | ------");
+//
+//            for int counter = 1;
+//            System.out.printf();
 //        }
 
     }
