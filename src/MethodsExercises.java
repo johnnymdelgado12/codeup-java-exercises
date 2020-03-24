@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -62,21 +63,47 @@ public class MethodsExercises {
             for (i = 2; i <= numInput; i++)
                 result *= i;
             return result;
+
         }
     }
 
+//    4. Create an application that simulates dice rolling.
+//
+//    Ask the user to enter the number of sides for a pair of dice.
+//    Prompt the user to roll the dice.
+//    "Roll" two n-sided dice, display the results of each, and then ask the user if he/she wants to roll the dice again.
+//    Use static methods to implement the method(s) that generate the random numbers.
+//    Use the .random method of the java.lang.Math class to generate random numbers.
 
 
+    public static long diceRoll() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("wanna roll the dice? y/n");
+        String choice = input.nextLine();
+        long diceTotal = 0;
+        if (choice.equalsIgnoreCase("y")) {
+            System.out.println("how many sides of the dice are there?");
+            long diceSides = input.nextInt();
+            long min = 1;
+            long roll1 = (long) (Math.random() * diceSides) + min;
+            long roll2 = (long) (Math.random() * diceSides) + min;
+//            System.out.printf("You rolled %d and %d", roll1, roll2);
+            diceTotal = roll1 + roll2;
+        }
+        return diceTotal;
+    }
 
 
-    public static void main(String[] args){
-    System.out.println(addition(5,10));
-    System.out.println(subtraction(25, 15));
-    System.out.println(multiplication(5, 10));
-    System.out.println(division(15, 3));
-    System.out.println(remainder(4, 3));
-    int userInput = getInteger(1, 10);
-    System.out.printf("%d is a pretty sweet number", userInput);
-    System.out.println(factorial());
+    public static void main(String[] args) {
+        System.out.println(addition(5, 10));
+        System.out.println(subtraction(25, 15));
+        System.out.println(multiplication(5, 10));
+        System.out.println(division(15, 3));
+        System.out.println(remainder(4, 3));
+        int userInput = getInteger(1, 10);
+        System.out.printf("%d is a pretty sweet number", userInput);
+        System.out.println(factorial());
+        long vegasBaby = diceRoll();
+        System.out.printf("You rolled a %d!", vegasBaby);
     }
 }
