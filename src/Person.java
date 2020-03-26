@@ -3,7 +3,7 @@ public class Person {
 
     public Person(String newName) {
         this.name = newName;
-        System.out.println("A new person has been created");
+        System.out.printf("%s has been created\n", newName);
     }
 
     // returns the person's name
@@ -19,6 +19,7 @@ public class Person {
         System.out.printf("%s says hello! \n", this.name);
 
     };
+
 
     public static void main(String[] args){
 //        Person person1 = new Person("Johnny");
