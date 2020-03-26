@@ -25,10 +25,28 @@ public class Input {
         System.out.printf("Give me number between %d and %d:\n",min, max);
         String myStr = getString();
         int num = Integer.parseInt(myStr);
-        if (num < min || num > max){
+        while (num < min || num > max) {
             System.out.printf("Give me number between %d and %d:\n",min, max);
             myStr = getString();
             num = Integer.parseInt(myStr);
+        }
+        return num;
+    }
+
+    public double getDouble(){
+        System.out.println("Give me a number: ");
+        String myStr = getString();
+        return Double.parseDouble(myStr);
+    }
+
+    public double getDouble(double min, double max){
+        System.out.printf("Give me number between %f and %f:\n",min, max);
+        String myStr = getString();
+        double num = Double.parseDouble(myStr);
+        while (num < min || num > max) {
+            System.out.printf("Give me number between %f2 and %f2:\n",min, max);
+            myStr = getString();
+            num = Double.parseDouble(myStr);
         }
         return num;
     }
