@@ -30,7 +30,7 @@ public class MethodsExercises {
 
     public static int getInteger(int min, int max){
         Scanner input = new Scanner(System.in);
-        System.out.printf("please enter a number between %d and %d: ", min, max);
+        System.out.printf("please enter a number between %d and %d: \n", min, max);
         int numInput = input.nextInt();
         if(numInput < min || numInput > max){
             System.out.println("That number is not in range!");
@@ -78,7 +78,7 @@ public class MethodsExercises {
 
     public static long diceRoll() {
         Scanner input = new Scanner(System.in);
-        System.out.println("wanna roll the dice? y/n");
+        System.out.println("wanna roll the dice? [y/n]");
         String choice = input.nextLine();
         long diceTotal = 0;
         if (choice.equalsIgnoreCase("y")) {
