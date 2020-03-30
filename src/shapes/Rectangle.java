@@ -1,8 +1,5 @@
 package shapes;
 
-
-import java.util.Scanner;
-
 public class Rectangle {
 
     protected int length;
@@ -10,7 +7,7 @@ public class Rectangle {
 
     public Rectangle(int length, int width){
         this.length = length;
-        this.length = width;
+        this.width = width;
     }
 
     public int getPerimeter(){
