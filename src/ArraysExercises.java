@@ -28,7 +28,6 @@ public class ArraysExercises {
         }
     }
 
-
     //create a static method named addPerson
     //accept an array of Person objects as well as a single person object to add to the passed array
     //should return an array
