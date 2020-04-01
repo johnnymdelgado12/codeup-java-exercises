@@ -4,8 +4,6 @@ public class Square extends Quadrilateral{
 
     public Square(double side){
         super(side, side);
-        this.length = side;
-        this.width = side;
     }
 
 
