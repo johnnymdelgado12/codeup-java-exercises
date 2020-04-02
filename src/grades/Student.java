@@ -33,14 +33,14 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student johnny = new Student("johnny");
-        System.out.println(johnny);
-        System.out.println(johnny.getName());
-        johnny.addGrade(100);
-        johnny.addGrade(97);
-        johnny.addGrade(85);
-        johnny.addGrade(95);
-        System.out.println(johnny.getGrade());
-        System.out.printf("Your grade average is %f, ",johnny.getGradeAverage());
+//        Student johnny = new Student("johnny");
+//        System.out.println(johnny);
+//        System.out.println(johnny.getName());
+//        johnny.addGrade(100);
+//        johnny.addGrade(97);
+//        johnny.addGrade(85);
+//        johnny.addGrade(95);
+//        System.out.println(johnny.getGrade());
+//        System.out.printf("Your grade average is %.2f, ",johnny.getGradeAverage());
     }
 }
