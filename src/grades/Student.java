@@ -32,6 +32,8 @@ public class Student {
         return sum / grades.size();
     }
 
+
+
     public static void main(String[] args) {
 //        Student johnny = new Student("johnny");
 //        System.out.println(johnny);
