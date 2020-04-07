@@ -6,6 +6,7 @@ public class Input {
     private static Scanner s = new Scanner(System.in);
 
     public static String getString(){
+
         return s.nextLine().trim().toLowerCase();
     }
 
@@ -22,7 +23,7 @@ public class Input {
 //    }
 
     public int getInt() {
-        System.out.println("Please enter a number: ");
+//        System.out.println("Please enter a number: ");
         String s = getString();
         int intNum = 0;
         try {
